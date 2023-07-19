@@ -8,11 +8,8 @@ import Typography from '@mui/material/Typography';
 
 const navItems = [{itemName: 'Dieta', navTo:'/diet'}, {itemName: 'Entrenamiento', navTo:'/training'}];
 
-function MenuTopBar() {
+export default function MenuTopBar() {
 
-    const navigateTo = (navItem: any): void => {
-        console.log(`Navitagating to ${navItem}`);
-    }
     return (
         <AppBar position="static">
             <Container maxWidth="xl">
@@ -47,4 +44,3 @@ function MenuTopBar() {
         </AppBar>
     );
 }
-export default MenuTopBar;
